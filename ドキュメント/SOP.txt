@@ -1,0 +1,18 @@
+
+My interest in Machine Learning started when I began learning how to program and realized that software could do a lot more than just follow instructions. The idea that a computer could learn from data and make smart decisions really fascinated me which made me want to learn more about Artificial Intelligence and Machine Learning.
+
+I have experience with C programming and building software and I love working on projects that help me learn things. One of the interesting projects I worked on is a system that uses Artificial Intelligence to detect posture in real time. This project uses TensorFlow, OpenCV and Googles MoveNet model to look at people through a webcam and check their posture. If someone has posture for too long the system sends alerts and saves the data so we can look at it later. I also added features that automatically log data in Excel and send reports by email.
+
+Working on this project taught me a lot about using computers to see and understand things putting Machine Learning models into systems, processing video in real time and handling data. Importantly I learned how the things I learned in school are used in real life. This project made me even more interested in Machine Learning. Made me want to learn more.
+
+Apart from building projects I always try to get better at solving problems and understanding the basics like how data's organized, algorithms, chance and linear algebra. I think it is really important to have a foundation to build good Machine Learning systems.
+
+I am applying to Amazon ML Summer School because it is a chance to learn from people who're experts in Machine Learning and work on big projects. I really want to understand the math behind Machine Learning and how it is used in the world. I think this program will help me connect what I learned in school to what happens in life.
+
+My goal is to build software systems and help make Artificial Intelligence and Machine Learning better. I want to learn from others work with people who're talented and get to know more about advanced Machine Learning concepts through this program.
+
+I think Amazon ML Summer School is the place to help me learn more and get ready for future opportunities, in Machine Learning and Artificial Intelligence.
+
+Thank You
+
+BOLISETTY PUJITHA.
