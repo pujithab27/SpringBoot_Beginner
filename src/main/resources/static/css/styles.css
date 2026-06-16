@@ -30,3 +30,26 @@ a{
     color: rgb(27, 180, 63);
     background-color: rgb(151, 28, 162);
 }
+.card{
+    border: 2px solid;
+    padding: 15px;
+    background-color: rgb(153, 69, 69);
+    text-align: center;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 300px;
+}
+.card img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.card h1{
+    margin: 15px 0 5px;
+}
+.card p{
+   margin-bottom: 20px;
+}
+.card button{
+    margin-bottom: 15px;
+}
