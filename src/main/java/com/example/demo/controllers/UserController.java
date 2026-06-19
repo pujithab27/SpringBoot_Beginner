@@ -33,4 +33,10 @@ public class UserController {
     public User addNewUser(@RequestBody User user) {
         return userService.addNewUser(user);
     }
+
+    @GetMapping("/random")
+    public User randomUser() {
+        return userService.randomUser();
+    }
 }
+
