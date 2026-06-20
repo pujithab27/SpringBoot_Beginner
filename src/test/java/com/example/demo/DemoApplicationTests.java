@@ -8,6 +8,7 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
@@ -26,6 +27,16 @@ class DemoApplicationTests {
 		mockMvc.perform(get("/v3/api-docs"))
 			.andExpect(status().isOk())
 			.andExpect(content().string(org.hamcrest.Matchers.containsString("/api/users")));
+	}
+
+	@Test
+	void randomUserApiReturnsAUser() throws Exception {
+		mockMvc.perform(get("/api/users/random"))
+			.andExpect(status().isOk())
+			.andExpect(jsonPath("$.id").isNumber())
+			.andExpect(jsonPath("$.name").isString())
+			.andExpect(jsonPath("$.gender").isString())
+			.andExpect(jsonPath("$.image").isString());
 	}
 
 }

@@ -2,7 +2,9 @@ package com.example.demo.services;
 
 import com.example.demo.models.User;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -17,7 +19,7 @@ public class UserService {
     }
 
     public List<User> getAllUsers() {
-        return allUsers;
+        return Collections.unmodifiableList(allUsers);
     }
 
     public User getUserById(int id) {
@@ -36,14 +38,7 @@ public class UserService {
     }
 
     public User randomUser() {
-        int randomIndex = (int) (Math.random() * allUsers.size());
+        int randomIndex = ThreadLocalRandom.current().nextInt(allUsers.size());
         return allUsers.get(randomIndex);
-      
-
-
-
-
-
-
-
+    }
 }
